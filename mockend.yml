@@ -2,6 +2,9 @@ models:
   User:
     hasMany: [Transaction]
     hasOne: [Wallet]
+    data: [
+      { name: tanch , email: tanch@test.com },
+    ]
     fake:
       _count: 20
       name: name
@@ -16,7 +19,7 @@ models:
     fake:
       _count: 20
       balance: { float: [0.00, 50000.00] }
-      currency: { oneOfString: [USD, EUR, PHP] }
+      currency: { oneOfString: [usd, eur, php] }
       updatedAt: { dateTime: [2020-01-01T00:00:00Z, 2025-01-01T00:00:00Z] }
 
   Transaction:
