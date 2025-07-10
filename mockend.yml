@@ -3,7 +3,7 @@ models:
     hasMany: [Transaction]
     hasOne: [Wallet]
     data: [
-      { name: tanch , email: tanch@test.com },
+      { name: Christopher Tan , email: tanch@test.com, password: test1234 },
     ]
     fake:
       _count: 20
